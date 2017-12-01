@@ -22,19 +22,19 @@ is taken.
 * Example: `zrs.sh myvol hourly 0 7` will produce 8 snapshots named hourly0 to hourly7
 
 ## Example crontab(5) with 4 types 4 snapshot each
-    0 * * * * zrs myvol hourly  0 3
-    0 0 * * * zrs myvol daily   0 3
-    0 0 * * 0 zrs myvol weekly  0 3
-    0 0 1 * * zrs myvol monthly 0 3
+    0 * * * * zrs.sh myvol hourly  0 3
+    0 0 * * * zrs.sh myvol daily   0 3
+    0 0 * * 0 zrs.sh myvol weekly  0 3
+    0 0 1 * * zrs.sh myvol monthly 0 3
 
 ## Some people like to keep it for a very long time
-    0 * * * * zrs myvol hourly  0 47
-    0 0 * * * zrs myvol daily   0 60
-    0 0 * * 0 zrs myvol weekly  0 11
-    0 0 1 * * zrs myvol monthly 0 24
+    0 * * * * zrs.sh myvol hourly  0 47
+    0 0 * * * zrs.sh myvol daily   0 60
+    0 0 * * 0 zrs.sh myvol weekly  0 11
+    0 0 1 * * zrs.sh myvol monthly 0 24
 
 Note that `/etc/crontab` has a different format than crontab(5)
 
-If you want to see how the script works just add `echo` before each zfs call.
+If you want to see how the script works before running, just add `echo` before each zfs call.
 
 ZRS is in Public Domain.
