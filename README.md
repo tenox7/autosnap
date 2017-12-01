@@ -32,6 +32,7 @@ is taken.
     0 0 * * * zrs.sh myvol daily   0 60
     0 0 * * 0 zrs.sh myvol weekly  0 11
     0 0 1 * * zrs.sh myvol monthly 0 24
+    0 0 1 1 * zrs.sh myvol yearly  0 4
 
 Note that `/etc/crontab` has a different format than crontab(5)
 
