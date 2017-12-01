@@ -3,6 +3,14 @@ This tool emulates rolling snapshots of NetApp on ZFS. I wish ZFS on FreeBSD has
 functionality built in but this wasnt the case. I also wish such tool already existed
 but this wasnt the case either. Yes, there are some but I didn't like their bloat.
 
+## Whats a rolling snapshot?
+It's a snapshot taken on a schedule that progresses in time. For example you can
+take a snapshot every hour and age the previous snapshots till the limit. Imagine
+hourly snapshot with limit of 4. Every hour the 4th snapshot is deleted, the 3rd
+snapshot becomes 4th, 2nd becomes 3rd, 1st becomes 2nd and finaly a new 1st snapshot
+is taken.
+
+
 ## Usage
 * Place `zrs.sh` in a directory accessible via PATH for cron.
 * Add crontab(5) entries for root. You can come up with any schedule you like.
@@ -19,7 +27,7 @@ but this wasnt the case either. Yes, there are some but I didn't like their bloa
     0 0 * * 0 zrs myvol weekly 0 3
     0 0 1 * * zrs myvol monthly 0 3
 
-# Some people like to keep it for a very long time
+## Some people like to keep it for a very long time
     0 * * * * zrs myvol hourly 0 47
     0 0 * * * zrs myvol daily 0 60
     0 0 * * 0 zrs myvol weekly 0 11
