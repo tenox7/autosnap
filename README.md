@@ -12,7 +12,7 @@ is taken.
 
 
 ## Usage
-* Place `zrs.sh` in a directory accessible via PATH for cron.
+* Place `zrs.sh` in a directory accessible via PATH for cron. ZRS is recursive so it will need to call itself by $0.
 * Add crontab(5) entries for root. You can come up with any schedule you like.
 * The syntax is: `zrs.sh <volume> <type> 0 <#max>`
 * Volume is name of ZFS volume.
