@@ -18,7 +18,7 @@ is taken.
 * Volume is name of ZFS volume.
 * Type is the name of a schedule for example hourly, daily, weekly.
 * The 3rd parameter must be always 0. Do not change it.
-* The last parameter is last snapshot in a sequence.
+* The 4th parameter is the last snapshot number in sequence.
 * Example: `zrs.sh myvol hourly 0 7` will produce 8 snapshots named hourly0 to hourly7
 
 ## Example crontab(5) with 4 types 4 snapshot each
