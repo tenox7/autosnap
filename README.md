@@ -13,12 +13,12 @@ is taken.
 
 ## Usage
 * Place `zrs.sh` in a directory accessible via PATH for cron. ZRS is recursive so it will need to call itself by $0.
-* Add crontab(5) entries for root. You can come up with any schedule you like.
-* The syntax is: `zrs.sh <volume> <type> 0 <#max>`
+* Add crontab(5) entries for root. You can come up with any schedule you want.
+* The syntax is: `zrs.sh <volume> <type> 0 <last>`
 * Volume is name of ZFS volume.
-* Type is the schedule name like hourly, daily, weekly.
+* Type is the name of a schedule for example hourly, daily, weekly.
 * The 3rd parameter must be always 0. Do not change it.
-* The last parameter is last snapshot sequence. 
+* The last parameter is last snapshot in a sequence.
 * Example: `zrs.sh myvol hourly 0 7` will produce 8 snapshots named hourly0 to hourly7
 
 ## Example crontab(5) with 4 types 4 snapshot each
