@@ -1,5 +1,5 @@
 # ZRS - ZFS Rolling Snapshot
-This tool emulates rolling snapshots of NetApp on ZFS. I wish FreeBSD/ZFS has such
+This tool emulates NetApp's rolling snapshots on ZFS. I wish FreeBSD/ZFS has such
 functionality built-in and even turned on by default. Yes, I'm aware there are other
 scripts like this but I didn't like their bloat.
 
@@ -39,4 +39,5 @@ Note that `/etc/crontab` has a different format than crontab(5).
 * The 4th parameter is the last snapshot number in sequence.
 * Example: `zrs.sh myvol hourly 0 7` will produce 8 snapshots named hourly0 to hourly7
 
+## License
 ZRS is in Public Domain.
