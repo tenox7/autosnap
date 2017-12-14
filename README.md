@@ -1,7 +1,7 @@
 # ZRS - ZFS Rolling Snapshot
 This tool emulates NetApp's rolling snapshots on ZFS. I wish FreeBSD/ZFS has such
-functionality built-in and even turned on by default. Yes, I'm aware there are other
-scripts like this but I didn't like their bloat.
+functionality built-in and even turned on by default. There are other scripts like
+this but I didn't like their bloat.
 
 ## Whats a rolling snapshot?
 It's a snapshot taken on a schedule that progresses in time. For example you can
