@@ -40,4 +40,4 @@ Note that `/etc/crontab` has a different format than crontab(5).
 * Example: `zrs.sh myvol hourly 0 7` will produce 8 snapshots named hourly0 to hourly7
 
 ## License
-ZRS is in Public Domain.
+Apache 2.0
