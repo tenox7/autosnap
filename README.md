@@ -14,7 +14,7 @@ is taken.
 ## Usage
 * Place `zrs.sh` in a directory accessible via PATH for cron. ZRS is recursive so it will need to call itself by $0.
 * Add crontab(5) entries for root. You can come up with any schedule you want. See examples below.
-
+* If you `zfs set snapdir=visible vol...` you will see snapshot dirs in the filesystem like on NetApp 
 
 ## Example crontab(5) with 4 types, 4 snapshot each
     0 * * * * zrs.sh myvol hourly  0 3
