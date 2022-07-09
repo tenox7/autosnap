@@ -2,7 +2,7 @@
 
 This script emulates [NetApp Snapshots Schedules](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-1D3B0C7D-D94E-43A3-9091-5E76003E16EB.html) on ZFS and BTRFS. Somewhat related to Apple Time Machine.
 
-## What is it exactly?
+## How does it work exactly?
 
 Snapshot are automatically created on a schedule. Aging and eventually deleting oldest snapshots.
 As an example lets consider a "hourly" schedule with maximum 4 snapshots:
