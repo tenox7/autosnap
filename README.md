@@ -1,6 +1,6 @@
 # ZFS / BTRFS Auto Snapshot
 
-This tool emulates [NetApp Snapshots Schedules](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-1D3B0C7D-D94E-43A3-9091-5E76003E16EB.html) on ZFS and BTRFS.
+This script emulates [NetApp Snapshots Schedules](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-1D3B0C7D-D94E-43A3-9091-5E76003E16EB.html) on ZFS and BTRFS.
 
 ## What is it exactly?
 
