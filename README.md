@@ -26,7 +26,7 @@ from a backup.
 
 ## Usage
 
-🛑 **WARNING USE AT YOUR OWN RISK I take no responsibility for any data loss associated with use of these scripts!**
+🛑 **WARNING USE AT YOUR OWN RISK 🛑 I take no responsibility for any data loss associated with use of these scripts! If used incorrectly the script may delete your volumes and data. Snapshots are not backups. Make sure to back up your data before use. **
 
 * Place either ZFS or BTRFS `autosnap.sh` in a directory accessible via PATH for Cron. The script is recursive so it will need to call itself by `"${0}"`.
 * If using BTRFS edit the script and specify mount point and snapshots directory.
