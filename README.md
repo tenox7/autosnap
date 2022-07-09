@@ -26,6 +26,8 @@ from a backup.
 
 ## Usage
 
+🛑 **WARNING USE AT YOUR OWN RISK I take no responsibility for any data loss associated with use of these scripts!**
+
 * Place either ZFS or BTRFS `autosnap.sh` in a directory accessible via PATH for Cron. The script is recursive so it will need to call itself by `"${0}"`.
 * If using BTRFS edit the script and specify mount point and snapshots directory.
 * Add crontab(5) entries for root. You can come up with any schedule you want. See examples below.
