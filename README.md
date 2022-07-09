@@ -20,7 +20,7 @@ renamed from `0 -> 1`, `1 -> 2`, `2 -> 3` etc. Finally a new snapshot `0` is cre
 
 ## Why?
 
-Most commonly to protect from accidental file removal or changes, as a undelete, or bring up older version.
+Most commonly to protect from accidental file removal or changes, undelete, or restore an older version.
 Snapshots are NOT backups, but if you delete something it's faster to copy it from a snapshot than recover
 from a backup.
 
