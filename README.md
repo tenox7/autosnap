@@ -39,7 +39,7 @@ from a backup.
 0 0 1 * * autosnap.sh myvol monthly 11 # a year worth of monthly snapshots
 ```
 
-Note that `/etc/crontab` has a different format than crontab(5). Crontab format may differ between FreeBSD and Linux.
+Note that system `/etc/crontab` has a different format than user crontab(5). Crontab format may also differ between operating systems and cron versions.
 
 ## Syntax Explanation
 
