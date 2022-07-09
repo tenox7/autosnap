@@ -34,6 +34,8 @@ from a backup.
 * If using BTRFS edit the script and specify mount point and snapshots directory.
 * Add crontab(5) entries for root. You can come up with any schedule you want. See examples below.
 
+Note, when running for the very first time, or first round of snapshots you will get errors because there is no oldest snapshot to delete or older snapshots to rename. Thats normal, just ignore.
+
 ## Example crontab(5) with 4 types
 
 ```
