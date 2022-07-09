@@ -4,7 +4,7 @@ This script emulates [NetApp Snapshots Schedules](https://library.netapp.com/ecm
 
 ## What is it exactly?
 
-Snapshot are automatically created on a schedule. Aging and eventually deleting older snapshots.
+Snapshot are automatically created on a schedule. Aging and eventually deleting oldest snapshots.
 As an example lets consider a "hourly" schedule with maximum 4 snapshots:
 
 ```
