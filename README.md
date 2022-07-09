@@ -24,11 +24,12 @@ Most commonly to protect from accidental file removal or changes, undelete, or r
 Snapshots are NOT backups, but if you delete something it's faster to copy it from a snapshot than recover
 from a backup.
 
-## Usage
 
-🛑 **WARNING USE AT YOUR OWN RISK** 🛑  
+## 🛑 WARNING USE AT YOUR OWN RISK 🛑
 
 **I take no responsibility for any data loss associated with use of these scripts! If used incorrectly the script may delete your volumes and data. Snapshots are not backups. Make sure to back up your data before use.**
+
+## Usage
 
 * Place either ZFS or BTRFS `autosnap.sh` in a directory accessible via PATH for Cron. The script is recursive so it will need to call itself by `"${0}"`.
 * If using BTRFS edit the script and specify mount point and snapshots directory.
