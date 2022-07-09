@@ -53,7 +53,7 @@ Note that system `/etc/crontab` has a different format than user crontab(5). Cro
 * The syntax is: `zrs.sh <volname> <type> <#max>`
 * Volname is a ZFS/BTRFS volume name.
 * Type is the name of a schedule for example `hourly`, `daily`, `weekly`, `mickey_mouse`, `donald_duck`. It can also be empty `""` if you have only one schedule.
-* The 3rd parameter is the max snapshot number in sequence starting from 0.
+* The 3rd parameter is the max snapshot number in sequence starting from 0, or number of snapshots -1.
 * Example: `autosnap.sh mypics hourly 7` will produce 8 snapshots named hourly0 to hourly7
 
 ## Legal Stuff
